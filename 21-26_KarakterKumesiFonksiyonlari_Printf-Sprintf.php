@@ -1,10 +1,77 @@
 <?php
 print("bu fonksiyonlar bir değişkeni biçimlendirmek için kullanılır.
- printf() : elde ettiği değişkeni browser a yazdırır.
-  sprintf() : elde ettiği değişkeni return eder.");
-  print("<br>");
-  print("<hr>");
-  print("-----biçim parametreleri------");
+printf() : elde ettiği değişkeni browser a yazdırır.
+sprintf() : elde ettiği değişkeni return eder.");
+print("<br>");
+print("<hr>");
+print("-----biçim parametreleri------");print("<br>");
+print("% : biçim parametresi gerketirmez");print("<br>");
+print("b : değişken tamsayı olarak işlem görür ve ikili parametre döner");print("<br>");
+print("c : değiken tamsayı olarak işlem görür ve ASCII değerin karşılığı olan karakter olarak döner");print("<br>");
+print("d : değişken tamsayı olarak işlem görür ve ondalık sayı olarak döner");print("<br>");
+print("f : değişken kesirili sayı olarak işlem görür ve kesirli sayı olarak döner");print("<br>");
+print("o : değişken tamsayı olarak işlem görür ve sekiz-tabanlı (octal) sayı olarak döner ");print("<br>");
+print("s : değişken alfanümerik olarak işlem görür ve alfanümerik sayı olarak döner.(Harfler,küçük harf olur)");print("<br>");
+print("x : değişken  tamsayı olarak işlem görür ve 16 tabanlı (hexadecimal) sayı olarak döner harfler küçük harf olur");print("<br>");
+print("X : değişken  tamsayı olarak işlem görür ve 16 tabanlı (hexadecimal) sayı olarak döner harfler büyük harf olur");print("<br>");
+print("<br>");
+print("kullanım şekli :");print("<br>");
+print('printf("biçim",$degisken1,$degisken2,...."metin")');print("<br>");
+print("biçim parametresinin başına yüzde işareti konulur en fazla 5 tane belirleyici özellik alır");print("<br>");
+print("doldurma karakteri : tek tırnak ve onu izleyen bir karakterden oluşur");print("<br>");
+print("hizalama : eksi işaretinin varlığı yazının sola, yokluğu ise sağa hizalanma anlamına gelir");print("<br>");
+print("en az-en çok uzunluğu : sayı-nokta-sayı (örnekğin 40.40 gibi) yazılır birincisi sayı azami ikinci sayı asgari uzunluğu");print("<br>");
+print("<br>");
+$degisken1="iyilik";
+$degisken2=15.1698;
+$degisken3="<br>\n";
+printf("%'.-40.40s",$degisken1);print("<br>");
+printf("%'.-40.40s%'2d%s",$degisken1,$degisken2,$degisken3);
+printf("Değeri (ABD) $%.3f",$degisken2);
+print("<hr>");
+$n=43943215;
+$u=-43943215;
+$c=53;
+print("ikil gösterim : ");
+printf("%%b = '%b\n",$n);print("<br>");print("<br>");
+print("ascii karakteri basar chr() ile aynı : ");
+printf("%%c = '%c\n",$c);print("<br>");print("<br>");
+print("standart tamsayı gösterimi : ");
+printf("%%d = '%d\n",$n);print("<br>");print("<br>");
+print("bilimsel gösterim : ");
+printf("%%e = '%e\n",$n);print("<br>");print("<br>");
+print("pozitif tamsayının işaretsiz tamsayı gösterimi");
+printf("%%u = '%u\n",$n);print("<br>");print("<br>");
+print("negatif tamsayının işaretsiz tamsayı gösterimi");
+printf("%%u = '%u\n",$u);print("<br>");print("<br>");
+print("gerçek sayı gösterimi");
+printf("%%f = '%u\n",$n);print("<br>");print("<br>");
+print("sekizlik gösterim");
+printf("%%o = '%o\n",$n);print("<br>");print("<br>");
+print("küçük harfli onaltılık sayı gösterimi");
+printf("%%x = '%x\n",$n);print("<br>");print("<br>");
+print("büyük harfli onaltılık sayı gösterimi");
+printf("%%X = '%X\n",$n);print("<br>");print("<br>");
+print("pozitif tamsayı üzerinden işaret belirteci");
+printf("%%+d= '%+d\n",$n);print("<br>");print("<br>");
+print("negatif tamsayı üzerinden işaret belirteci");
+printf("%%+d= '%+d\n",$u);print("<br>");print("<br>");
 
+print("<hr>");
+print("<br>");
+$s='Merhaba';
+$t='Merhaba Dünya';
+print("standart bilgi : ");
+printf("[%s]\n",$s);print("<br>");
+print("boşluklarla sağa hizalanır : ");
+printf("[%10s]\n",$s);print("<br>");
+print("boşluklarla sola hizalanır : ");
+printf("[%-10s]\n",$s);print("<br>");
+print("sıfırlarla doldurma dizgelerdede çalışır : ");
+printf("[%010s]\n",$s);print("<br>");
+print("özel dolgu karakteri : ");
+printf("[%'#10s]\n",$s);print("<br>");
+print("10 karakterlik sınırlama ile sola hizalanır : ");
+printf("[%10.10s]\n",$t);print("<br>");
 
 ?>
