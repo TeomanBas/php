@@ -13,8 +13,8 @@ function DaireAlanCevre($r){
     print("alan : ".$Alan." | "."cevre : ".$Cevre);
     print("<br>");
     echo $GLOBALS['mesaj'];
-    // aşağıdaki şeklildeki gibi bir kullanım hata verecektir.
-    echo $mesaj;
+    // aşağıdaki şekildeki gibi bir kullanım hata verecektir.
+    // echo $mesaj;
 }
 
 DaireAlanCevre(101);
