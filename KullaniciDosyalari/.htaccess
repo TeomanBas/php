@@ -1,0 +1,4 @@
+<File ~ "^KullaniciDosyalari\.inc$">
+    Order allow, deny
+    Deny from allow
+</File>

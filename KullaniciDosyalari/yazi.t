@@ -1,0 +1,1 @@
+bu deneme yazisi yazi.t dosyasi
