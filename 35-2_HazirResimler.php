@@ -6,7 +6,7 @@
 // imagecreatefromwbmp()
 
 header("Content-type:image/png");
-// resim dosyasını değişkene atadık.
+// resim dosyasını değişkene atadık.resme dosyadan erişim için kullanılır
 $resim=imagecreatefrompng("buton.png");
 
 //renk tanımlaması

@@ -7,7 +7,8 @@
     <title>Request Fonksiyonu</title>
 </head>
 <body>
-<p> request fonksiyonu post ve get metoduyla gönderilen veya cookie içeren değişkenleri okumak için kullanılır
+<p> request fonksiyonu post ve get metoduyla gönderilen veya cookie içeren değişkenleri okumak için kullanılır.
+    bu diziler içerisindeki değişkenleri içeririr.
     $_POST ve $_GET  fonksiyonlarının yerine $_REQUEST şeklindede kullanılabilir
 </p>
    

@@ -18,6 +18,10 @@ print("SESSION TEMİZLENİYOR");
 print("<br>");
 session_destroy();
 
+//unset() ile belirtilen session değeri de silinebilir silindikten sonra değer okunamaz
+//unset($_SESSION['deneme']);
+// veya değerin okunabilir olması için ob_start() çıkış kontrol fonksiyonları kullanılabilir.
+
 
 print("SESSION id tanımlaması yapıldı 123456 inspect elementlerden kontrol edilebilir");
 print("<br>");

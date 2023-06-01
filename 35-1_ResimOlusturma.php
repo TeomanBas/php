@@ -23,6 +23,8 @@
 //-------------------------------------------------------------------------------------
 // belirtilen boyutlar ve özelliklere göre gifler oluşturup saklanabilir
 // imagegif(resim_degiskeni,dosya_ismi);
+// eğer sayfayada resim dosyası oluşturuluyorsa resim dosyası oluşturulduktan sonra 
+// bu header tanımlamasına gerek yoktur 
 // header("Content-type:image/gif");
 // jpeg formatında resim oluşturuldu
 // $resim2=imagecreatetruecolor(500,500);
@@ -137,8 +139,6 @@
 //--------------------------------------------------------------------------------------
 // imagettftext(resim_degiskeni,boyut,açı,x,y,renk,yazi_tipi,yazi) mevcut yazı tipleirni kullanarak 
 // grafik tabanlı yazı oluşturmak.
-
-// header("Content-type:image/png");
 // $resim=imagecreatetruecolor(150,150);
 // $zemin_rengi=imagecolorallocate($resim,255,100,55);
 // $yazi_rengi=imagecolorallocate($resim,255,255,255);
@@ -146,8 +146,11 @@
 // çapraz yazını oluşturulması
 // $yazi_tipi_file='broadw.ttf';
 // $yazi_tipi='comic.ttf';
+// eğer istenirse font değişkeni imageloadfont() fonksiyonu ile belirlenebilir
+// $yazi_font=imageloadfont('./font/comic.ttf')
 // çapraz yazı oluşturmak
 // imagettftext($resim,20,50,50,21,$yazi_rengi,$yazi_tipi_file,"Hello World");
+// header("Content-type:image/png");
 // imagepng($resim);
 // imagedestroy($resim);
 

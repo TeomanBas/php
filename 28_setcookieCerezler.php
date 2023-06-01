@@ -15,7 +15,8 @@ print("sadece_http : true olduğu takdirde cookie sadece http protokolü üzerin
 print("setcookie() : fonksiyonundan false değeri dönüyorsa bu fonksiyondan önce işlem yaptırılmış anlamına gelmektedir ve cookie oluşturulmayacaktır.");print("<br>");
 
 print('oluşturulan bir cookie değerini okumak için $_COOKIE("çerez_adı")');print("<br>");
-
+print('windowsta cookie değerleri "C:\\Users\\<username>\\AppData\\Local\\Microsoft\\Windows\\Temporary Internet Files" içerisinde tutulur');print("<br>");
+print('chrome için cookie değerleri linux için "~/.cache/chromium/Default/Cache" dizninde tutulur,firefox için "~/.mozilla/firefox/*.default/Cache" dizininde tutulur');print("<br>");
 print('oluşturulan cookie silmek için geçmiş zamanlı bir değer verilebilir ikincisi boş bir cookie oluşturmaktır.
 setcookie("cerez") şeklinde bir kullanım yeniden cookie oluşmasına neden olur ve eski cookie değeri silinmiş olur.');
 print("<br>");
@@ -25,4 +26,5 @@ setcookie("ilkcerez",$deger,time()+3600,'/28_setcookieCerezler.php',"192.168.100
 print("<br>");
 print("oluşturğumuz cookie değeri :");
 echo $_COOKIE["ilkcerez"];
+
 ?>

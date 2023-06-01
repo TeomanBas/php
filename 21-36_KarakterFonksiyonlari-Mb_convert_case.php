@@ -1,0 +1,33 @@
+<?php 
+$as="merhaba dünya burası dünya";
+$as=mb_convert_case($as,MB_CASE_UPPER,"UTF-8");
+print($as);
+echo "<hr>";
+$as="merhaba dünya burası dünya";
+$as=mb_convert_case($as,MB_CASE_LOWER,"UTF-8");
+print($as);
+echo "<hr>";
+$as="merhaba dünya burası dünya";
+$as=mb_convert_case($as,MB_CASE_TITLE,"UTF-8");
+print($as);
+echo "<hr>";
+$as="merhaba dünya burası dünya";
+$as=mb_convert_case($as,MB_CASE_FOLD,"UTF-8");
+print($as);
+echo "<hr>";
+$as="merhaba dünya burası dünya";
+$as=mb_convert_case($as,MB_CASE_UPPER_SIMPLE,"UTF-8");
+print($as);
+echo "<hr>";
+$as="merhaba dünya burası dünya";
+$as=mb_convert_case($as,MB_CASE_LOWER_SIMPLE,"UTF-8");
+print($as);
+echo "<hr>";
+$as="merhaba dünya burası dünya";
+$as=mb_convert_case($as,MB_CASE_TITLE_SIMPLE,"UTF-8");
+print($as);
+echo "<hr>";
+$as="merhaba dünya burası dünya";
+$as=mb_convert_case($as,MB_CASE_FOLD_SIMPLE,"UTF-8");
+print($as);
+?>

@@ -175,10 +175,57 @@ echo "<br>";
 echo "<br>";
 echo "<br>";
 
+# explode() bir dizi değişkenini belirli bir ayırıcıya göre ayırır ve bunu bir dizi olarak döndürür
+$Cumle=Array("burası bir cümledir,bu cümle virgul karakterlerine göre ayrılacaktır, bunu explode fonksiyonu ile gerçekleştireceğiz");
+$CumleParcalari=explode(",",$Cumle[0]);
+print_r($CumleParcalari);
+echo "<br>";
+echo "<br>";
+echo "<br>";
 
 
+#list() dizi elemanlarının sırasıyla belirli değişkenlere atanmasını sağlar
+$meyve=Array(
+    "elma ağacı" , "elma",
+    "şeftali ağacı" , "şeftali",
+    
+);
+list($agac,$meyvesi)=$meyve;
+echo "$agac ının meyvesi $meyvesi dir";
+echo "<br>";
+echo "<br>";
+echo "<br>";
 
 
+# each() dizinin ilk anahtar ve değer çiftini döndürür.php 7 de kullanımdan kaldırıldı
+// $ilkmeyve=each($meyve);
+// print_r($ilkmeyve); 
+// echo "<br>";
+// echo "<br>";
+// echo "<br>";
+
+
+# array_key_exists bir değerin veya indisin belirtilen dizide olup olmadığını kontrol eder
+# dizide key value yapısı olması lazım ve sadece key içerisinde arama yapar
+$meyve=Array(
+    "elma ağacı" => "elma",
+    "şeftali ağacı" => "şeftali",
+    
+);
+$deger="elma ağacı";
+$degerkontrolcu=array_key_exists($deger,$meyve);
+if($degerkontrolcu==1){
+    echo "$deger değer var";
+}else{
+    echo "$deger değer yok";
+}
+echo "<br>";
+echo "<br>";
+echo "<br>";
+
+# array_count_values() gir dizide bir değerden kaç tane olduğunu ve değeri döndürür.
+$hello=array(1,"hello",1,"hello",2,"dünya",3,"merhaba",2,"world");
+print_r(array_count_values($hello));
 
 
 
